@@ -12,7 +12,7 @@ echo "\nMemulai PATCHING NEW TOKEN untuk Hooks\n";
 $NEWTOKEN = GetPatchToken($msisdn,$tokens);
 echo "Result $NEWTOKEN";
 echo "\nMemulai HOOKS PULL API untuk Hooks\n";
-$Hooks = GenerateHooks($msisdn,$tokens);
+$Hooks = GenerateHooks($msisdn,$NEWTOKEN);
 echo "ID HOOKS :\t $Hooks\n";
 echo "Silahkan Login dengan AKUN dan masukkan HOOKS ID pada menu PULL API REQUEST";
 //AutoToken(GetMsisdn())
